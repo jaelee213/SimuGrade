@@ -1,0 +1,284 @@
+
+.result {
+	grid-area: result;
+	background-color: rgba(255, 255, 255, 0.55);
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem 2rem;
+}
+
+.modeModifier {
+	font-size: 1.19rem;
+}
+
+.gclabel {
+	align-content: center;
+	text-align: center;
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}
+
+.gccontents {
+	padding: 0.4rem 1rem;
+	font-size: 0.85rem;
+	margin: 0 auto;
+	width: 85%;
+	border: 2px #9CC0E7 solid;
+	border-radius: 0.4rem;
+}
+
+/* for the select dropdown */
+.custom-select {
+	overflow: hidden;
+	margin-left: 1rem;
+}
+
+.custom-select select {
+	background: transparent;
+	width: 100px;
+	font-size: 0.85rem;
+	color: black;
+	border-radius: 0.1rem;
+	height: 25px;
+	-webkit-appearance: default;
+}
+
+.custom-select select:focus {
+	outline: none;
+}
+
+.but {
+	margin: 0 auto;
+	align-content: center;
+	text-align: center;
+}
+
+.gradeDisplay {
+	padding: 0.4rem 1rem;
+	font-size: 0.85rem;
+	margin: 0.3rem auto;
+	width: 85%;
+	border: 2px #9CC0E7 solid;
+	border-radius: 0.4rem;
+	height: 85%;
+	max-height: 85%;
+	overflow: scroll;
+}
+
+.removeButton {
+	cursor: pointer;
+	border-radius: 0.2rem;
+	padding: 0.2rem;
+	background-color: red;
+	color: white;
+	font-size: 0.85rem;
+}
+
+.grades {
+	padding: 0.5rem 0;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 0.4rem;
+	border: 0.1rem #9CC0E7 solid;
+	font-size: 0.8rem;
+	text-align: center;
+	overflow:hidden;
+}
+
+#spaces {
+	padding-right: 1rem;
+}
+
+button {
+	margin: 1rem 0;
+	background-color: dodgerblue;
+	width: 15rem;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	padding: 10px 32px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
+
+#outof, #received {
+	margin-left: 1.3rem;
+}
+
+#rspace {
+	padding-right: 1.8rem;
+}
+
+#tspace {
+	padding-right: 0.6rem;
+}
+
+.currentGrade {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.42);
+	margin-bottom: 1rem;
+	margin-top: 0;
+	text-align: center;
+}
+
+.currentGrade * {
+	text-align: center;
+}
+
+.possibleGrade * {
+	text-align: center;
+}
+
+.possibleGrade {
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	border-radius: 0.5rem;
+	background-color: dodgerblue;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+#resultDisplay {
+	margin: 0 auto;
+	height: 81%;
+	max-height: 81%;
+	overflow: scroll;
+}
+
+.ua {
+	padding: 0.4rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.sliderbox {
+	width: 88%;
+	border: 0.2rem solid dodgerblue;
+	border-radius: 0.3rem;
+	padding: 0.3rem 0.5rem;
+	margin-top: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.calc {
+	border-radius: 0.5rem;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.precalc {
+	border-radius: 0.5rem;
+	background-color: rgb(255, 255, 255);
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#statusspace {
+	padding-right: 2.8rem;
+}
+
+#asspace {
+	padding-right: 0.6rem;
+}
+
+input {
+	font-size: 0.85rem;
+	color: black;
+	margin-left: 1rem;
+	width: 100px;
+	height: 20px;
+	border-radius: 0.2rem;
+	border: solid 1px lightgray;
+	background: transparent;
+}
+
+/* *************  */
+
+.selectlabel {
+	font-size: 0.85rem;
+	margin: 0;
+	padding: 0.5rem;
+}
+
+.selectinline {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.gradeContainer {
+	max-width: 100%;
+	border-width: thin;
+	grid-area: gradeContainer;
+	border-left: 6px solid #9CC0E7;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+.container {
+	grid-area: container;
+
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"result gradeContainer"
+}
+
+#maincontainer {
+	background-color: white;
+	-webkit-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.2);
+	box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.2);
+	height: 95%;
+	width: 85%;
+	margin: 0 auto;
+	border: 4px solid white;
+	border-radius: 0.5rem;
+	grid-area: main;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"container"
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+#header {
+	text-align: center;
+	font-size: 2rem;
+	font-family: 'Righteous', cursive;
+	margin-bottom: 0.4rem;
+}
+
+body {
+	color: rgba(13, 24, 53, 0.865);
+	background-color: rgba(199, 217, 237, 0.838);
+	font-family: 'Open Sans', sans-serif;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"main"
+}

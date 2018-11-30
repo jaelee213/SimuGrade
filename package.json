@@ -1,0 +1,48 @@
+{
+  "name": "solo",
+  "version": "1.0.0",
+  "description": "solo project",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --hot --inline --progress --colors --watch --content-base ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaelee213/solo.git"
+  },
+  "author": "jaelee213",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaelee213/solo/issues"
+  },
+  "homepage": "https://github.com/jaelee213/solo#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "rc-slider": "^8.6.3",
+    "rc-tooltip": "^3.7.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "nodemon": "^1.18.7",
+    "redux-devtools-extension": "^2.13.7",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
